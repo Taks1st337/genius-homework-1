@@ -1,0 +1,129 @@
+:root {
+  /* Colors */
+  --primary-color-white: #ffffff;
+  --primary-color-blue: #2b7fff;
+  --primary-color-darkblue: #011c44;
+
+  --secondary--color-darkgrey: #4a4a4a;
+  --secondary-color-grey: #747272;
+  --secondary-color-darkblue: #011f4a;
+  --secondary-color-yellow: #ffd02b;
+  --secondary-color-black: #000000;
+  --secondary-color-white: #ffffff;
+  /* Fonts */
+  --font-family-heading: 'Play', sans-serif;
+  --font-family-text: 'Roboto', sans-serif;
+}
+
+/* General*/
+.body {
+  font-family: var(--font-family-text);
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  color: var(--primary-color-darkblue);
+  font-family: var(--font-family-heading);
+  font-weight: 700;
+}
+
+h2 span {
+  color: var(--primary-color-blue);
+}
+
+p {
+  color: var(--primary-color-darkblue);
+}
+
+/* Logotype */
+.logotype {
+  font-family: var(--font-family-heading);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 95%;
+  text-transform: capitalize;
+  color: var(--primary-color-blue);
+  text-decoration: none;
+}
+
+/* Hero title */
+.hero-title {
+  color: var(--primary-color-darkblue);
+}
+
+.hero-title span {
+  color: var(--primary-color-blue);
+  font-family: var(--font-family-heading);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/* Button */
+.button {
+  color: var(--primary-color-white);
+  background-color: var(--primary-color-blue);
+  border-radius: 32px;
+  padding: 16px 32px;
+  width: 219px;
+  height: 53px;
+  cursor: pointer;
+  font-family: var(--font-family-text);
+  font-weight: 600;
+}
+
+.button:hover {
+  color: var(--primary-color-darkblue);
+  background-color: transparent;
+  border: 2px solid var(--primary-color-blue);
+  border-radius: 32px;
+  padding: 16px 32px;
+  width: 219px;
+  height: 53px;
+}
+
+.button-description {
+  color: var(--secondary--color-darkgrey);
+}
+
+/* Section */
+#information-section p span {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+#information-section h2 span {
+  text-transform: capitalize;
+}
+
+#advantages-section p {
+  color: var(--secondary-color-black);
+}
+
+/* Link */
+.header-menu {
+  color: var(--primary-color-darkblue);
+  text-decoration: none;
+}
+
+.header-menu:hover {
+  color: var(--primary-color-blue);
+  font-weight: 700;
+}
+
+.footer {
+  background-color: var(--primary-color-darkblue);
+}
+
+.footer-link {
+  font-style: normal;
+  color: var(--secondary-color-white);
+  text-decoration: none;
+}
+
+.text-data-protected {
+  color: var(--secondary-color-grey);
+}
