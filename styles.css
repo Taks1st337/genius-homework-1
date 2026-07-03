@@ -16,9 +16,28 @@
 }
 
 /* General*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .body {
   font-family: var(--font-family-text);
   font-weight: 400;
+  margin: 0;
 }
 
 ul {
@@ -29,6 +48,7 @@ h2 {
   color: var(--primary-color-darkblue);
   font-family: var(--font-family-heading);
   font-weight: 700;
+  font-size: 64px;
 }
 
 h2 span {
@@ -37,6 +57,13 @@ h2 span {
 
 p {
   color: var(--primary-color-darkblue);
+}
+
+.container {
+  width: 100%;
+  max-width: 1272px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 /* Logotype */
@@ -51,8 +78,12 @@ p {
 }
 
 /* Hero title */
+
 .hero-title {
   color: var(--primary-color-darkblue);
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 40px;
 }
 
 .hero-title span {
@@ -60,6 +91,8 @@ p {
   font-family: var(--font-family-heading);
   font-weight: 700;
   text-transform: capitalize;
+  font-size: 140px;
+  line-height: 0.8;
 }
 
 /* Button */
@@ -73,6 +106,7 @@ p {
   cursor: pointer;
   font-family: var(--font-family-text);
   font-weight: 600;
+  margin-bottom: 14px;
 }
 
 .button:hover {
@@ -87,9 +121,15 @@ p {
 
 .button-description {
   color: var(--secondary--color-darkgrey);
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 /* Section */
+.information-title {
+  margin-bottom: 40px;
+}
+
 #information-section p span {
   text-transform: capitalize;
   font-weight: 600;
@@ -99,14 +139,28 @@ p {
   text-transform: capitalize;
 }
 
+.advantages-title {
+  margin-bottom: 48px;
+}
+
 #advantages-section p {
   color: var(--secondary-color-black);
 }
 
+.procedure-menu-title {
+  margin-bottom: 48px;
+}
+
+.contact-section-title {
+  margin-bottom: 48px;
+}
+
 /* Link */
+
 .header-menu {
   color: var(--primary-color-darkblue);
   text-decoration: none;
+  padding: 0px 56px 0px 0px;
 }
 
 .header-menu:hover {
@@ -126,4 +180,17 @@ p {
 
 .text-data-protected {
   color: var(--secondary-color-grey);
+}
+
+/* Header menu */
+
+.menu-sections {
+  display: flex;
+  margin: auto;
+  padding-inline-start: 0;
+}
+
+.menu-adress {
+  padding-inline-start: 0;
+  display: flex;
 }
