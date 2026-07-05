@@ -16,6 +16,7 @@
 }
 
 /* General*/
+
 h1,
 h2,
 h3,
@@ -23,7 +24,7 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
+  margin: 0;
 }
 
 .section {
@@ -42,6 +43,8 @@ p {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
@@ -49,6 +52,7 @@ h2 {
   font-family: var(--font-family-heading);
   font-weight: 700;
   font-size: 64px;
+  line-height: 100%;
 }
 
 h2 span {
@@ -125,9 +129,41 @@ p {
   line-height: 1.5;
 }
 
-/* Section */
-.information-title {
-  margin-bottom: 40px;
+/* Header menu */
+.header-elements {
+  display: flex;
+  gap: 16px;
+}
+
+.header-navigation {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-adress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.menu-sections {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header-menu {
+  color: var(--primary-color-darkblue);
+  text-decoration: none;
+}
+
+/* Information Section */
+#information-section p {
+  line-height: 1.7;
 }
 
 #information-section p span {
@@ -139,37 +175,125 @@ p {
   text-transform: capitalize;
 }
 
+.information {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.information-text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 709px;
+  gap: 40px;
+}
+
+.information-images {
+  display: flex;
+  flex-direction: column;
+}
+/*Advantages section*/
+.advantages {
+  flex-basis: 1060px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages-menu {
+  display: flex;
+  gap: 56px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.advantages-element {
+  background-color: lightblue;
+  flex-basis: 316px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 32px;
+  gap: 10px;
+}
+
 .advantages-title {
   margin-bottom: 48px;
+  text-align: center;
+  max-width: 432px;
+  width: 100%;
+}
+
+#advantages-section img {
+  padding-top: 30px;
 }
 
 #advantages-section p {
   color: var(--secondary-color-black);
+  text-align: center;
+  padding: 0px 32px 24px 32px;
+}
+
+/*Procedure section*/
+.procedure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 1216px;
+}
+
+.procedure-menu {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.procedure-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.procedure-element img {
+  border-radius: 4px 120px;
 }
 
 .procedure-menu-title {
   margin-bottom: 48px;
+  text-align: center;
 }
+
+/*Contact section*/
 
 .contact-section-title {
   margin-bottom: 48px;
+  text-align: center;
 }
 
-/* Link */
-
-.header-menu {
-  color: var(--primary-color-darkblue);
-  text-decoration: none;
-  padding: 0px 56px 0px 0px;
-}
-
-.header-menu:hover {
-  color: var(--primary-color-blue);
-  font-weight: 700;
-}
+/* Footer section */
 
 .footer {
   background-color: var(--primary-color-darkblue);
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 56px;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.adress-link {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .footer-link {
@@ -178,19 +302,18 @@ p {
   text-decoration: none;
 }
 
+.social-links {
+  display: flex;
+  padding-top: 16px;
+  gap: 24px;
+}
+
 .text-data-protected {
   color: var(--secondary-color-grey);
+  margin-top: 16px;
 }
 
-/* Header menu */
-
-.menu-sections {
-  display: flex;
-  margin: auto;
-  padding-inline-start: 0;
-}
-
-.menu-adress {
-  padding-inline-start: 0;
-  display: flex;
+.header-menu:hover {
+  color: var(--primary-color-blue);
+  font-weight: 700;
 }
