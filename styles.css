@@ -146,7 +146,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 35px;
+  gap: 32px;
+}
+
+.header-icon {
+  fill: var(--primary-color-darkblue);
 }
 
 .menu-sections {
@@ -159,6 +163,15 @@ p {
 .header-menu {
   color: var(--primary-color-darkblue);
   text-decoration: none;
+}
+
+/*Hero Section*/
+
+.hero-section {
+  background-image: url(./images/image1576.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
 }
 
 /* Information Section */
@@ -215,6 +228,11 @@ p {
   align-items: center;
   border-radius: 32px;
   gap: 10px;
+  padding-top: 30px;
+}
+
+.advantages-icon {
+  fill: var(--primary-color-blue);
 }
 
 .advantages-title {
@@ -222,10 +240,6 @@ p {
   text-align: center;
   max-width: 432px;
   width: 100%;
-}
-
-#advantages-section img {
-  padding-top: 30px;
 }
 
 #advantages-section p {
@@ -250,6 +264,16 @@ p {
 }
 
 .procedure-element {
+  width: 344px;
+  height: 456px;
+  background-image: url(./images/image1580.jpg);
+  border-radius: 4px 120px;
+  background: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    var(--primary-color-darkblue) 101.39%
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,11 +281,37 @@ p {
 
 .procedure-element img {
   border-radius: 4px 120px;
+  background: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    var(--primary-color-darkblue) 101.39%
+  );
 }
 
 .procedure-menu-title {
   margin-bottom: 48px;
   text-align: center;
+}
+/*Carousel menu*/
+.carousel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--primary-color-darkblue);
+  fill: var(--primary-color-darkblue);
+}
+
+.carousel-button:hover {
+  border: 1px solid var(--primary-color-white);
+  cursor: pointer;
+  background-color: var(--primary-color-blue);
+  fill: var(--primary-color-white);
 }
 
 /*Contact section*/
@@ -294,6 +344,10 @@ p {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.footer-icon {
+  fill: var(--primary-color-white);
 }
 
 .footer-link {
