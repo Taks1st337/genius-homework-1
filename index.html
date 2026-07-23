@@ -73,7 +73,9 @@
               zone
             </span>
           </h1>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
           <p class="button-description">
             Запишись та отримай безкоштовну <br />консультацію нашого
             косметолога
@@ -94,20 +96,21 @@
               </p>
               <p>
                 B <span>beauty zone</span> ми гарантуємо найвищі стандарти
-                якості <br />
-                та приємний сервіс. Наші косметологічні процедури та препарати
+                якості та приємний сервіс. Наші косметологічні процедури та
+                препарати допоможуть вам підтримувати свою красу та молодість.
                 <br />
-                допоможуть вам підтримувати свою красу та молодість. <br />
                 З нами краса назавжди!
               </p>
             </div>
             <div class="information-images">
               <img
-                src="./images/image1578.jpg"
+                class="image-before-procedure"
+                src="./images/woman-before.jpg"
                 alt="Лицо девушки ДО процедур"
               />
               <img
-                src="./images/image1579.jpg"
+                class="image-after-procedure"
+                src="./images/woman-after.jpg"
                 alt="Лицо девушки ПОСЛЕ процедур"
               />
             </div>
@@ -155,8 +158,8 @@
       </section>
       <section class="section" id="procedure-menu-section">
         <div class="container">
+          <h2 class="procedure-menu-title">Наші <span>процедури</span></h2>
           <div class="procedure">
-            <h2 class="procedure-menu-title">Наші <span>процедури</span></h2>
             <button class="carousel-button" type="button">
               <svg class="carousel-arrow" width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
@@ -185,6 +188,11 @@
                 <p>Очищення обличчя</p>
               </li>
             </ul>
+            <button class="carousel-button" type="button">
+              <svg class="carousel-arrow" width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -207,13 +215,15 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-menu">
-          <a class="logotype" href="./">
-            beauty <br />
-            zone
-          </a>
-          <nav>
-            <ul class="footer-navigation">
+        <div class="footer-container">
+          <nav class="footer-navigation">
+            <div class="footer-logotype">
+              <a class="logotype" href="./">
+                beauty <br />
+                zone
+              </a>
+            </div>
+            <ul class="footer-navigation-menu">
               <li>
                 <a class="footer-link" href="#information-section">Про нас</a>
               </li>
@@ -230,9 +240,9 @@
               </li>
             </ul>
           </nav>
-          <div>
-            <address>
-              <ul class="adress-link">
+          <address class="footer-adress">
+            <div class="adress-container">
+              <ul class="adress-links">
                 <li>
                   <a class="footer-link" href="tel:380960000007"
                     >+ 38 (096) 000 00 07</a
@@ -253,41 +263,44 @@
                   >
                 </li>
               </ul>
-            </address>
-            <ul class="social-links">
-              <li>
-                <a href="tel:380960000007">
-                  <svg class="footer-icon" width="42" height="42">
-                    <use href="./images/icons.svg#icon-telephone"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/" target="_blank">
-                  <svg class="footer-icon" width="42" height="42">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                  <svg class="footer-icon" width="42" height="42">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-data-protected">
-            <a class="footer-link" href="">Політика конфіденційності</a>
-            <p class="text-data-protected">&#169;2022 Дані захищені</p>
-          </div>
+              <ul class="social-links">
+                <li>
+                  <a href="tel:380960000007">
+                    <svg class="footer-icon" width="42" height="42">
+                      <use href="./images/icons.svg#icon-telephone"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank">
+                    <svg class="footer-icon" width="42" height="42">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <svg class="footer-icon" width="42" height="42">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-data-protected">
+              <a class="footer-link" href="">Політика конфіденційності</a>
+              <p class="text-data-protected">&#169;2022 Дані захищені</p>
+            </div>
+          </address>
         </div>
-        <img
-          src="./images/pexels-photo-8101532-PhotoRoom1-removebg-preview.png"
-          alt="Баночки з піпетками"
-        />
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
